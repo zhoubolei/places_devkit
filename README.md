@@ -1,8 +1,6 @@
 # Places365 Development Kit
 
-=================================================
-Introduction
-=================================================
+## Introduction
 
 This is the documentation of the Places365 challenge 2016 development kit.
 
@@ -17,9 +15,7 @@ Please contact Bolei Zhou (bzhou@csail.mit.edu) for questions, comments, or bug 
 
 **Note: Please first download the image list and annotations for [Places365-Standard](http://places2.csail.mit.edu/challenge2016/filelist_places365-standard.tar) and the image list and annotations for [Place365-challenge](http://places2.csail.mit.edu/challenge2016/filelist_places365-challenge.tar), and decompress the files in the data folder.**
 
-=================================================
-1. Overview of challenge dataset
-=================================================
+##  Overview of challenge dataset
 
 There are three types of image data for this competition: training
 data from Places365-Challenge (TRAINING), validation data specific to this
@@ -59,9 +55,7 @@ The 3 sets of images (training, validation and test) are available as
 images and images resized to 256*256 for download.
 
 
-=================================================
-2. Challenge details
-=================================================
+## Challenge details
 
 The 365 scene categories used in the challenge dataset are part of the 
 larger Places2 dataset.
@@ -77,9 +71,7 @@ that there are ~6.2million more extra images in Places365-challenge
 compared to Places365-standard. The first 5000 images (or less) per 
 category in Places365-challenge belong to the Places365-standard.
 
----------------------------
-2.1.1 Training data
----------------------------
+### 1 Training data
 
 Each image is considered as belonging to a particular scene category. 
 See [1] for more details of the collection and labeling strategy.
@@ -106,10 +98,7 @@ mapping to scene category ids is available in:
 All images are in JPEG format. We also include the data/places365_train_standard.txt
 here, you don't need to use it.
 
-
------------------------------
-2.1.2 Validation data
------------------------------
+### 2 Validation data
 
 There are a total of 36,500 validation images. They are named as
 
@@ -127,9 +116,7 @@ The classification ground truth of the validation images is in
 where each line contains one image filename and its corresponding scene
 category label (from 0 to 364).
 
------------------------
-2.1.3 Test data
------------------------
+### 3 Test data
 
 There are a total of 328,500 test images. The test files are named as
 
@@ -143,9 +130,7 @@ There are 900 test images for each scene category. The ground truth
 annotations will not be released.
 
 
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-2.2 Submission format
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+## Submission format
 
 The submission of results on test data will consist of a text file
 with one line per image, in the alphabetical order of the image file
@@ -167,9 +152,7 @@ Example file on the validation data is
   evaluation/demo.val.pred.txt    
 
 
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-2.3 Evaluation routines
-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+## Evaluation routines
 
 The Matlab routine for evaluating the submission is
 
@@ -184,7 +167,7 @@ and you will see something similar to the following output:
 PLACES365 SCENE CLASSIFICATION TASK
 pred_file: demo.val.pred.txt
 ground_truth_file: ../data/places365_val.txt
-# guesses vs cls error
+### guesses vs cls error
     1.0000    0.9974
     2.0000    0.9944
     3.0000    0.9920
@@ -200,9 +183,7 @@ Only the error with 5 guesses will be used to determine the winner.
 (The demo.val.pred.txt used here is a synthetic result.)
 
 
-====================================================================
-References
-====================================================================
+## References
 
 [1] B. Zhou, A. Khosla, A. Lapedriza, A. Torralba and A. Oliva
 Places: An Image Database for Deep Scene Understanding
