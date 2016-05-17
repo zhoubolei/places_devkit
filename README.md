@@ -1,3 +1,5 @@
+# Places365 Development Kit
+
 =================================================
 Introduction
 =================================================
@@ -5,16 +7,15 @@ Introduction
 This is the documentation of the Places365 challenge 2016 development kit.
 
 Table of contents:
-  1. Overview of challenge dataset
-  2. Challenge details
-    2.1 Image list and annotations
-    2.2 Submission format
-    2.3 Evaluation routines
+- Overview of challenge dataset
+- Challenge details
+    1. Image list and annotations
+    2. Submission format
+    3. Evaluation routines
 
-Please contact Bolei Zhou (bzhou@csail.mit.edu) for questions, comments,
-or bug reports.
+Please contact Bolei Zhou (bzhou@csail.mit.edu) for questions, comments, or bug reports.
 
-Note: Please first download the image list and annotations for Places365-Standard[http://places2.csail.mit.edu/challenge2016/filelist_places365-standard.tar] and the image list and annotations for Place365-challenge[http://places2.csail.mit.edu/challenge2016/filelist_places365-challenge.tar], and decompress the files in the data folder.
+**Note: Please first download the image list and annotations for [Places365-Standard](http://places2.csail.mit.edu/challenge2016/filelist_places365-standard.tar) and the image list and annotations for [Place365-challenge](http://places2.csail.mit.edu/challenge2016/filelist_places365-challenge.tar), and decompress the files in the data folder.**
 
 =================================================
 1. Overview of challenge dataset
