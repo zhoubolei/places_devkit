@@ -19,10 +19,10 @@ Please contact Bolei Zhou (bzhou@csail.mit.edu) for questions, comments, or bug 
 
 There are three types of image data for Places365-Standard: training data from Places365-Standard (TRAINING), validation data (VALIDATION), and test data (TEST).  There is no overlap in the three sources of data: TRAINING, VALIDATION, and TEST.  All three sets of data contain images of 365 categories of scenes.
 
-                 Number of images
+Number of images
 
  |    Dataset       |TRAIN|VALIDATION|TEST|
- |------------------|-----|----------|----|
+ |------------------|:----:|---------:|----:|
  |Places365-Standard|1,803,460|36,500|328,500|
 
 Every image in training, validation and test sets has a single image-level label specifying the presence of one scene category
@@ -51,10 +51,10 @@ images and images resized to 256*256 for download.
 
 There are three types of image data for this competition: training data from Places365-Challenge (TRAINING), validation data (VALIDATION), and test data (TEST).  There is no overlap in the three sources of data: TRAINING, VALIDATION, and TEST.  All three sets of data contain images of 365 categories of scenes. The VALIDATION and TEST are the same as the Places365-Standard. The first 5000 images (or less as it is bounded by the total image number in that category) in each category are the images from Places365-Standard train set.
 
-                 Number of images
+Number of images
 
  |   Dataset         ｜        TRAIN   |   VALIDATION  |   TEST|
- |--------------------|--------------|--------------|----------|
+ |--------------------|:--------------:|--------------:|----------:|
  |Places365-Challenge |   8,026,628  |    36,500    |  328,500|
 
 Every image in training, validation and test sets has a singleimage-level label specifying the presence of one scene category
