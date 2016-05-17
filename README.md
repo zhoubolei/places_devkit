@@ -13,27 +13,53 @@ Table of contents:
 
 Please contact Bolei Zhou (bzhou@csail.mit.edu) for questions, comments, or bug reports.
 
-**Note: Please first download the image list and annotations for [Places365-standard](http://places2.csail.mit.edu/challenge2016/filelist_places365-standard.tar) and the image list and annotations for [Place365-challenge](http://places2.csail.mit.edu/challenge2016/filelist_places365-challenge.tar), and decompress the files in the data folder.**
+**Note: Please first download the image list and annotations for [Places365-Standard](http://places2.csail.mit.edu/challenge2016/filelist_places365-standard.tar) and the image list and annotations for [Place365-Challenge](http://places2.csail.mit.edu/challenge2016/filelist_places365-challenge.tar), and decompress the files in the data folder.**
 
-##  Overview of challenge dataset
+##  Overview of Places365-Standard Data
 
-There are three types of image data for this competition: training
-data from Places365-Challenge (TRAINING), validation data specific to this
-competition (VALIDATION), and test data specific to this competition
-(TEST).  There is no overlap in the three sources of data: TRAINING,
-VALIDATION, and TEST.  All three sets of data contain images of 365
-categories of scenes.
+There are three types of image data for Places365-Standard: training data from Places365-Standard (TRAINING), validation data (VALIDATION), and test data (TEST).  There is no overlap in the three sources of data: TRAINING, VALIDATION, and TEST.  All three sets of data contain images of 365 categories of scenes.
 
                  Number of images
 
-    Dataset      TRAIN      VALIDATION     TEST
-   -----------------------------------------------
-    Places365    8,026,628      36,500      328,500
+    Dataset                TRAIN      VALIDATION     TEST
+ ---------------------------------------------------------
+ Places365-Standard    1,803,460      36,500      328,500
 
-Every image in training, validation and test sets has a single
-image-level label specifying the presence of one scene category
+Every image in training, validation and test sets has a single image-level label specifying the presence of one scene category
 
-Challenge database statistics:
+Places365-Standard statistics:
+
+  Training:
+    
+    - 1,803,460 images, with between 3,068 and 5,000 per category
+
+  Validation:
+
+    - 36,500 images, with 50 images per category
+
+  Test:
+
+    - 328,500 images, with 900 images per category
+
+Packaging details:
+
+The 3 sets of images (training, validation and test) are available as 
+3 tar archives. All images are in JPEG format. We provide both the original 
+images and images resized to 256*256 for download.
+
+##  Overview of Places365-Challenge Data
+
+There are three types of image data for this competition: training data from Places365-Challenge (TRAINING), validation data (VALIDATION), and test data (TEST).  There is no overlap in the three sources of data: TRAINING, VALIDATION, and TEST.  All three sets of data contain images of 365 categories of scenes. The VALIDATION and TEST are the same as the Places365-Standard. The first 5000 images (or less as it is bounded by the total image number in that category) in each category are the images from Places365-Standard train set.
+
+                 Number of images
+
+    Dataset                 TRAIN      VALIDATION     TEST
+ ----------------------------------------------------------
+ Places365-Challenge    8,026,628      36,500      328,500
+
+Every image in training, validation and test sets has a singleimage-level label specifying the presence of one scene category
+
+Places365-Challenge statistics:
 
   Training:
     
@@ -49,13 +75,12 @@ Challenge database statistics:
 
 Packaging details:
 
-
 The 3 sets of images (training, validation and test) are available as 
 3 tar archives. All images are in JPEG format. We provide both the original 
 images and images resized to 256*256 for download.
 
 
-## Challenge details
+## Places Challenge 2016 details
 
 The 365 scene categories used in the challenge dataset are part of the 
 larger Places2 dataset.
@@ -66,7 +91,7 @@ All the class names and ids are available in:
 where each line contains the scene category name followed by its id
 (an integer between 0 and 364).
 
-The difference betweee Places365-challenge and Places365-standard is 
+The difference betweee Places365-Challenge and Places365-Standard is 
 that there are ~6.2million more extra images in Places365-challenge 
 compared to Places365-standard. The first 5000 images (or less) per 
 category in Places365-challenge belong to the Places365-standard.
@@ -167,6 +192,7 @@ and you will see something similar to the following output:
 PLACES365 SCENE CLASSIFICATION TASK
 pred_file: demo.val.pred.txt
 ground_truth_file: ../data/places365_val.txt
+
 ### guesses vs cls error
     1.0000    0.9974
     2.0000    0.9944
