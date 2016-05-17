@@ -21,9 +21,9 @@ There are three types of image data for Places365-Standard: training data from P
 
                  Number of images
 
-    Dataset                TRAIN      VALIDATION     TEST
- ---------------------------------------------------------
- Places365-Standard    1,803,460      36,500      328,500
+ |    Dataset       |TRAIN|VALIDATION|TEST|
+ |------------------|-----|----------|----|
+ |Places365-Standard|1,803,460|36,500|328,500|
 
 Every image in training, validation and test sets has a single image-level label specifying the presence of one scene category
 
@@ -53,9 +53,9 @@ There are three types of image data for this competition: training data from Pla
 
                  Number of images
 
-    Dataset                 TRAIN      VALIDATION     TEST
- ----------------------------------------------------------
- Places365-Challenge    8,026,628      36,500      328,500
+ |   Dataset         ｜        TRAIN   |   VALIDATION  |   TEST|
+ |--------------------|--------------|--------------|----------|
+ |Places365-Challenge |   8,026,628  |    36,500    |  328,500|
 
 Every image in training, validation and test sets has a singleimage-level label specifying the presence of one scene category
 
