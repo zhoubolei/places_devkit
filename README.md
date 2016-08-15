@@ -36,7 +36,7 @@ Places365-Standard statistics:
 
   Validation:
 
-    - 36,500 images, with 50 images per category
+    - 36,500 images, with 100 images per category
 
   Test:
 
@@ -65,11 +65,11 @@ Places365-Challenge statistics:
 
   Training:
     
-    - 8,097,967 images, with between 3068 and 40,000 per category
+    - 8,026,628 images, with between 3068 and 40,000 per category
 
   Validation:
 
-    - 36,500 images, with 50 images per category
+    - 36,500 images, with 100 images per category
 
   Test:
 
@@ -135,7 +135,7 @@ There are a total of 36,500 validation images. They are named as
       Places365_val_00036499.jpg
       Places365_val_00036500.jpg
 
-There are 50 validation images for each scene category.
+There are 100 validation images for each scene category.
 
 The classification ground truth of the validation images is in 
     data/places365_val.txt,
