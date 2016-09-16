@@ -218,3 +218,6 @@ Places: An Image Database for Deep Scene Understanding
 Arxiv, 2015 (PDF coming soon)
 http://places2.csail.mit.edu
 
+## License
+
+The pre-trained Places-CNN models can be used under the Creative Common License (Attribution CC BY). Please give appropriate credit to our work, such as providng a link to the paper or the [Places project page](http://places2.csail.mit.edu). The copyright of all the images from the Places and Places2 database belongs to the image owners.
