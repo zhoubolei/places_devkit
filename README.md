@@ -13,7 +13,7 @@ Table of contents:
 
 Please contact Bolei Zhou (bzhou@csail.mit.edu) for questions, comments, or bug reports.
 
-**Note: Please first download the image list and annotations for [Places365-Standard](http://places2.csail.mit.edu/challenge2016/filelist_places365-standard.tar) and the image list and annotations for [Place365-Challenge](http://places2.csail.mit.edu/challenge2016/filelist_places365-challenge.tar), and decompress the files in the data folder.**
+**Note: Please first download the image list and annotations for [Places365-Standard](http://data.csail.mit.edu/places/places365/filelist_places365-standard.tar) and the image list and annotations for [Place365-Challenge](http://data.csail.mit.edu/places/places365/filelist_places365-challenge.tar), and decompress the files in the data folder.**
 
 ##  Overview of Places365-Standard Data
 
