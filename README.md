@@ -1,23 +1,28 @@
-# Places365 Development Kit
+# Places365 Data Development Kit
 
 ## Introduction
 
-This is the documentation of the Places365 challenge 2016 development kit.
+This is the documentation of the Places365 data development kit. If you want the Places-CNN models instead of the training data, please refer to the [Places365-models](https://github.com/CSAILVision/places365).
 
 Table of contents:
-- Overview of challenge dataset
-- Challenge details
+- Overview of Places Database
+- Image data details for Places365-Standard and Places365-Challenge
     1. Image list and annotations
     2. Submission format
     3. Evaluation routines
+- Overview of the Places-extra69 data
 
 Please contact Bolei Zhou (bzhou@csail.mit.edu) for questions, comments, or bug reports.
 
-**Note: Please first download the image list and annotations for [Places365-Standard](http://data.csail.mit.edu/places/places365/filelist_places365-standard.tar) and the image list and annotations for [Place365-Challenge](http://data.csail.mit.edu/places/places365/filelist_places365-challenge.tar), and decompress the files in the data folder.**
+## Downloads
+
+* First download the image list and annotations for [Places365-Standard](http://data.csail.mit.edu/places/places365/filelist_places365-standard.tar) and the image list and annotations for [Place365-Challenge](http://data.csail.mit.edu/places/places365/filelist_places365-challenge.tar), and decompress the files in the data folder. This file only contains image list, without actual images.
+
+* Download the corresponding compressed image files at [here](http://places2.csail.mit.edu/download.html). This file contains the actual images of Places database.
 
 ##  Overview of Places365-Standard Data
 
-There are three types of image data for Places365-Standard: training data from Places365-Standard (TRAINING), validation data (VALIDATION), and test data (TEST).  There is no overlap in the three sources of data: TRAINING, VALIDATION, and TEST.  All three sets of data contain images of 365 categories of scenes.
+The category list of the Places365 is at [categories_places365.txt](categories_places365.txt). There are three types of image data for Places365-Standard: training data from Places365-Standard (TRAINING), validation data (VALIDATION), and test data (TEST).  There is no overlap in the three sources of data: TRAINING, VALIDATION, and TEST.  All three sets of data contain images of 365 categories of scenes.
 
                  Number of images
 
@@ -82,15 +87,11 @@ The 3 sets of images (training, validation and test) are available as
 images and images resized to 256*256 for download.
 
 
-## Places Challenge 2016 details
+## Details of the data
 
-The 365 scene categories used in the challenge dataset are part of the 
-larger Places2 dataset.
+The 365 scene categories used in the challenge dataset are part of the  Places2 dataset.
 
-All the class names and ids are available in:
-    data/categories_places365.txt,
-
-where each line contains the scene category name followed by its id
+All the class names and ids are available in: [categories_places365.txt](categories_places365.txt), where each line contains the scene category name followed by its id
 (an integer between 0 and 364).
 
 The difference betweee Places365-Challenge and Places365-Standard is 
@@ -210,13 +211,30 @@ Only the error with 5 guesses will be used to determine the winner.
 
 (The demo.val.pred.txt used here is a synthetic result.)
 
+## Overview of the Places-Extra69 Data
 
-## References
+Totally there are 434 scene categories in the Places Database. Besides the data of the Places365 we released above, here we release the data of the extra 69 scene categories. The category list of the extra 69 categories is at [here](categories_extra69.txt), where each line contains the scene category name followed by its id (an integer between 0 and 68). Download the images at the [project page](http://places2.csail.mit.edu/download.html). There are the splits of train and test in
+the compressed file. For each category, we leave 100 images out as the test images. There are 98,721 images for training and 6,600 images for testing. For those categories which don't have 100 enough images, we don't include them in the testing split. 
 
-[1] B. Zhou, A. Khosla, A. Lapedriza, A. Torralba and A. Oliva
-Places: An Image Database for Deep Scene Understanding
-Arxiv, 2015 (PDF coming soon)
-http://places2.csail.mit.edu
+Potentially this Places-extra69 data could be used for one-shot learning or few-shot learning, or some transfer learning research.
+
+
+## Reference
+
+Link: [Places2 Database](http://places2.csail.mit.edu), [Places1 Database](http://places.csail.mit.edu)
+
+Please cite the following [IEEE Transaction on Pattern Analysis and Machine Intelligence paper](http://places2.csail.mit.edu/PAMI_places.pdf) if you use the data or pre-trained CNN models.
+
+```
+ @article{zhou2017places,
+   title={Places: A 10 million Image Database for Scene Recognition},
+   author={Zhou, Bolei and Lapedriza, Agata and Khosla, Aditya and Oliva, Aude and Torralba, Antonio},
+   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+   year={2017},
+   publisher={IEEE}
+ }
+
+```
 
 ## License
 
